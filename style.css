@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --base-color:194;
+  --primary-color:hsla(var(--base-color), 97%, 31%, 1);
+  --secondary-color:hsla(var(--base-color), 9%, 89%, 1);
+
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+
+  height: 100vh;
+  
+  display: grid;
+}
+.page{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.hide{
+  display: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#timer{
+  font-size: 12.6rem;
+  font-weight: 500;
+  line-height: 14.8rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+}
+
+
+button{
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+main button{
+  border: none;
+  background-color: transparent;
+}
+footer button{
+  border: none;
+  border-radius:2.4rem ;
+  padding: 4.5rem;
+
+  background-color: var(--secondary-color);
+
+}
+.button-clicked{
+  background-color: var(--primary-color);
+}
+.button-clicked img{
+  filter: invert(1) brightness(10);
+}
+
+@media (min-width: 800px){
+  .page{
+    flex-direction: row;
+  }
+}
