@@ -13,52 +13,75 @@
 </head>
 <body>
   <div class="page">
+
+   <button id="activate-dark-theme" class="dark-mode">
+    <img src="./assets/modes/icons/dark-theme-activate.svg" alt="figura de um sol para ativa o modo escuro" srcset="">
+   </button>
+   <button id="deactivate-dark-theme" class="dark-mode hide">
+    <img src="./assets/modes/icons/dark-theme-deactivate.svg" alt="figura de uma lua para desativar o modo escuro" srcset="">
+   </button>
+
     <main>
       <div id="timer">
-        <span class="minutes">05</span>
+        <span class="minutes">15</span>
         <span>:</span>
         <span class="seconds">00</span>
       </div>
       <div id="controls">
-        <button class="play">
-          <img src="./assets/controls/play.svg" alt="ícone de botão play">
+        <button class="controls-buttons ">
+          <img class="controls-buttons" src="./assets/controls/play.svg" alt="ícone de botão play">
         </button>
-        <button class="stop">
-          <img src="./assets/controls/stop.svg" alt="ícone de botão stop">
+        <button class="controls-buttons ">
+          <img class="controls-buttons" src="./assets/controls/stop.svg" alt="ícone de botão stop">
         </button>
-        <button class="timer-up">
-          <img src="./assets/controls/timer-up.svg" alt="ícone de botão aumentar tempo">
+        <button class="controls-buttons ">
+          <img class="controls-buttons" src="./assets/controls/timer-up.svg" alt="ícone de botão aumentar tempo">
         </button>
-        <button class="timer-down">
-          <img src="./assets/controls/timer-down.svg" alt="ícone de botão diminuir tempo">
+        <button class="controls-buttons ">
+          <img  class="controls-buttons" src="./assets/controls/timer-down.svg" alt="ícone de botão diminuir tempo">
         </button>
       </div>
     </main>
     <footer>
-      <button class="forest ">
-        <img src="./assets/modes/forest.svg" alt="ícone de botão floresta">
-      </button>
-      <button class="forest-clicked button-clicked hide">
-        <img src="./assets/modes/forest.svg" alt="ícone de botão floresta selecionado">
-      </button>
-      <button class="rain ">
-        <img src="./assets/modes/rain.svg" alt="ícone de botão chuva">
-      </button>
-      <button class="rain-clicked button-clicked hide">
-        <img src="./assets/modes/rain.svg" alt="ícone de botão chuva selecionado">
-      </button>
-      <button class="coffee ">
-        <img src="./assets/modes/coffee.svg" alt="ícone de botão cafeteria">
-      </button>
-      <button class="coffee-clicked button-clicked hide">
-        <img src="./assets/modes/coffee.svg" alt="ícone de botão cafeteria selecionado">
-      </button>
-      <button class="fireplace ">
-        <img src="./assets/modes/fireplace.svg" alt="ícone de botão lareira">
-      </button>
-      <button class="fireplace-clicked button-clicked hide">
-        <img src="./assets/modes/fireplace.svg" alt="ícone de botão lareira selecionado">
-      </button>
+      <div class="dark-mode-off card-modes " id="card-forest">
+        <button class="forest">
+          <img src="./assets/modes/icons/forest.svg" alt="ícone de botão floresta">
+        </button>
+        <button class="button-clicked hide ">
+          <img src="./assets/modes/icons/forest.svg" alt="ícone de botão floresta selecionado">
+        </button>
+        <input type="range" class="dark-mode-off range-style " id="forest-range" min="0" max="1" step="0.1" value="0.5">
+      </div>
+
+        <div class="dark-mode-off card-modes" id="card-rain">
+          <button class="rain ">
+            <img src="./assets/modes/icons/rain.svg" alt="ícone de botão chuva">
+          </button>
+          <button class="button-clicked hide">
+            <img src="./assets/modes/icons/rain.svg" alt="ícone de botão chuva selecionado">
+          </button>
+          <input type="range" class="dark-mode-off range-style " id="rain-range" min="0" max="1" step="0.1" value="0.5">
+        </div>
+
+      <div class="dark-mode-off card-modes" id="card-coffee">
+        <button class="coffee ">
+          <img src="./assets/modes/icons/coffee.svg" alt="ícone de botão cafeteria">
+        </button>
+        <button class="button-clicked hide">
+          <img src="./assets/modes/icons/coffee.svg" alt="ícone de botão cafeteria selecionado">
+        </button>
+        <input type="range" class="dark-mode-off range-style " id="coffee-range" min="0" max="1" step="0.1" value="0.5">
+      </div>
+
+      <div class="dark-mode-off card-modes" id="card-fireplace">
+        <button class="fireplace ">
+          <img src="./assets/modes/icons/fireplace.svg" alt="ícone de botão lareira">
+        </button>
+        <button class="button-clicked hide">
+          <img src="./assets/modes/icons/fireplace.svg" alt="ícone de botão lareira selecionado">
+        </button>
+        <input type="range" class="dark-mode-off range-style " id="fireplace-range" min="0" max="1" step="0.1" value="0.5">
+      </div>
     </footer>
   </div>
 </body>

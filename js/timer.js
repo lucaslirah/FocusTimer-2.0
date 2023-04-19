@@ -1,7 +1,7 @@
 export default function({
   displayMinutes,
   displaySeconds,
-  sound
+  sound,
 }){
   let timerMinutes = Number(displayMinutes.textContent)
   let timerTimeOut
@@ -23,7 +23,7 @@ export default function({
       return
     }
 
-      updateDisplay(minutes, String(seconds - 1))
+    updateDisplay(minutes, String(seconds - 1))
     
     countdown()
     },1000)
@@ -72,8 +72,9 @@ export default function({
   return{
     resetTimer,
     hold,
+    
     minutesUp,
     minutesDown,
-    validateMinutes
+    validateMinutes,
   }
 }
