@@ -1,7 +1,8 @@
 <h1 align="center"> FocusTimer-2.0 </h1>
 
 <p align="center">
-Projeto de um timer pomodoro para focar em estudos com funções de controle e sons ambiente.
+Projeto de um timer pomodoro para focar em estudos com funções de controle e sons ambiente.<br>
+Disponível aqui: https://focus-timer-2-0-kappa.vercel.app/
 </p>
 
 <p align="center">
