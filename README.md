@@ -18,10 +18,10 @@ Projeto de um timer pomodoro para focar em estudos com funções de controle e s
 <br>
 
 <p align="center">
-  <img alt="FocusTimer-2.0" src="https://i.imgur.com/VxGlxXl.png" width="100%">
+  <img alt="FocusTimer-2.0" src="https://i.imgur.com/ZfNvJsG.png" width="25%">
 </p>
 <p align="center">
-  <img alt="FocusTimer-2.0" src="https://i.imgur.com/uEyxwnH.png" width="100%">
+  <img alt="FocusTimer-2.0" src="https://i.imgur.com/bcv8z5m.png" width="50%">
 </p>
 
 ## 🚀 Tecnologias
@@ -39,6 +39,7 @@ O FocusTimer 2.0 é um desafio proposto pela Rocket para praticar conhecimentos 
 - Recursividade
 - Factory com Injeção de dependências
 - ES6 Modules
+- Programação declarativa
 
 ## 🔖 Layout
 
