@@ -1,56 +1,86 @@
 export default function({
-  btnForest,
-  btnRain,
-  btnCoffee,
-  btnFireplace,
-  btnForestClicked,
-  btnRainClicked,
-  btnCoffeeClicked,
-  btnFireplaceClicked,
-  sound
+  cardsModes,
+  buttonCards,
+  buttonCardsClicked,
+  cardsRange,
+
+  sound,
 }){
 //modesON
   function forestOn(){
-    btnForest.classList.add('hide')
-    btnForestClicked.classList.remove('hide')
+    buttonCards[0].classList.add('hide')
+    buttonCardsClicked[0].classList.remove('hide')
+    
+    cardsRange[0].classList.add('range-clicked')
+    cardsModes[0].classList.add('card-selected')
+
     sound.forestMode.play()
   }
   function rainOn(){
-    btnRain.classList.add('hide')
-    btnRainClicked.classList.remove('hide')
+    buttonCards[1].classList.add('hide')
+    buttonCardsClicked[1].classList.remove('hide')
+
+    cardsRange[1].classList.add('range-clicked')
+    cardsModes[1].classList.add('card-selected')
+
     sound.rainMode.play()
   }
   function coffeeOn(){
-    btnCoffee.classList.add('hide')
-    btnCoffeeClicked.classList.remove('hide')
+    buttonCards[2].classList.add('hide')
+    buttonCardsClicked[2].classList.remove('hide')
+
+    cardsRange[2].classList.add('range-clicked')
+    cardsModes[2].classList.add('card-selected')
+
     sound.coffeeMode.play()
   }
   function fireplaceOn(){
-    btnFireplace.classList.add('hide')
-    btnFireplaceClicked.classList.remove('hide')
+    buttonCards[3].classList.add('hide')
+    buttonCardsClicked[3].classList.remove('hide')
+
+    cardsRange[3].classList.add('range-clicked')
+    cardsModes[3].classList.add('card-selected')
+
     sound.fireplaceMode.play()
   }
 //modesOFF
-function forestOff(){
-  btnForest.classList.remove('hide')
-  btnForestClicked.classList.add('hide')
-  sound.forestMode.pause()
-}
-function rainOff(){
-  btnRain.classList.remove('hide')
-  btnRainClicked.classList.add('hide')
-  sound.rainMode.pause()
-}
-function coffeeOff(){
-  btnCoffee.classList.remove('hide')
-  btnCoffeeClicked.classList.add('hide')
-  sound.coffeeMode.pause()
-}
-function fireplaceOff(){
-  btnFireplace.classList.remove('hide')
-  btnFireplaceClicked.classList.add('hide')
-  sound.fireplaceMode.pause()
-}
+  function forestOff(){
+    
+    buttonCards[0].classList.remove('hide')
+    buttonCardsClicked[0].classList.add('hide')
+    
+    cardsRange[0].classList.remove('range-clicked')
+    cardsModes[0].classList.remove('card-selected')
+
+    sound.forestMode.pause()
+  }
+  function rainOff(){
+    buttonCards[1].classList.remove('hide')
+    buttonCardsClicked[1].classList.add('hide')
+
+    cardsRange[1].classList.remove('range-clicked')
+    cardsModes[1].classList.remove('card-selected')
+
+    sound.rainMode.pause()
+  }
+  function coffeeOff(){
+    buttonCards[2].classList.remove('hide')
+    buttonCardsClicked[2].classList.add('hide')
+
+    cardsRange[2].classList.remove('range-clicked')
+    cardsModes[2].classList.remove('card-selected')
+
+    sound.coffeeMode.pause()
+  }
+  function fireplaceOff(){
+    buttonCards[3].classList.remove('hide')
+    buttonCardsClicked[3].classList.add('hide')
+
+    cardsRange[3].classList.remove('range-clicked')
+    cardsModes[3].classList.remove('card-selected')
+
+    sound.fireplaceMode.pause()
+  }
 
   return{
     forestOn,

@@ -7,6 +7,9 @@
   --base-color:194;
   --primary-color:hsla(var(--base-color), 97%, 31%, 1);
   --secondary-color:hsla(var(--base-color), 9%, 89%, 1);
+  --black-color:hsla(var(--base-color), 5%, 7%, 1);
+  --white-color:hsla(0, 0%, 100%, 1);
+  --card-dark:hsla(240, 6%, 17%, 1);
 
   font-size: 62.5%;
 }
@@ -57,34 +60,146 @@ footer{
   gap: 3.2rem;
 }
 
-
 button{
   cursor: pointer;
-}
-button:hover{
-  transform: scale(1.1);
-  transition: all 0.2s;
 }
 main button{
   border: none;
   background-color: transparent;
 }
+main button img{
+  filter: brightness(0);
+}
+.card-modes:hover,
+main button:hover{
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
 footer button{
   border: none;
+  background: transparent;
+}
+
+/* icone de dark-mode */
+.dark-mode{
+  border: none; 
+  background: none;
+  margin: 2rem 2rem 0 0; 
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; 
+}
+.dark-mode img{
+  width: 3.8rem;
+}
+
+/* cards modals*/
+/* dark-mode-off nos cards*/
+.dark-mode-off.card-modes{
   border-radius:2.4rem ;
-  padding: 4.5rem;
+  padding: 3rem;
 
   background-color: var(--secondary-color);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
 }
-.button-clicked{
-  background-color: var(--primary-color);
+.dark-mode-off.card-selected{
+  background: var(--primary-color);
 }
-.button-clicked img{
-  filter: invert(1) brightness(10);
+/* dark-mode-on nos cards*/
+.dark-mode-on.card-modes{
+  border-radius:2.4rem ;
+  padding: 3rem;
+
+  background: var(--card-dark);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+.dark-mode-on.card-selected{
+  background: hsla(195, 74%, 15%, 1);
 }
 
-@media (min-width: 800px){
+/* dark-mode-on no button */
+footer button:nth-child(2n) img{
+  filter: brightness(10);
+}
+/* dark-mode-off no button */
+.button-dark-mode img{
+  filter: brightness(3.5);
+}
+
+/* dark-mode-off no range */
+/* aparencia do range */
+.dark-mode-off.range-style{
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--black-color);
+  outline: none;
+  height: .4rem;
+  border-radius: .8rem;
+  width: 8rem;
+  cursor: pointer;
+}
+/* aparencia da bolinha do range */
+.dark-mode-off.range-style::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%; 
+
+  background: var(--black-color);
+  cursor: pointer;
+}
+/* aparencia do range clicado */
+.dark-mode-off.range-clicked{
+  background: var(--white-color);
+}
+.dark-mode-off.range-clicked::-webkit-slider-thumb {
+  background: var(--white-color);
+}
+/* dark-mode-on no range*/
+/* aparencia do range */
+.dark-mode-on.range-style{
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--white-color);
+  outline: none;
+  height: .4rem;
+  border-radius: .8rem;
+  width: 8rem;
+  cursor: pointer;
+}
+/* aparencia da bolinha do range */
+.dark-mode-on.range-style::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%; 
+
+  background: var(--white-color);
+  cursor: pointer;
+}
+/* aparencia do range clicado */
+.dark-mode-on.range-clicked{
+  background: var(--white-color);
+}
+.dark-mode-on.range-clicked::-webkit-slider-thumb {
+  background: var(--white-color);
+}
+
+@media (min-width: 845px){
   .page{
     flex-direction: row;
   }

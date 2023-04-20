@@ -1,66 +1,88 @@
 import {  
-  btnPlay,
-  btnStop,
-  btnTimerUp,
-  btnTimerDown,
-  btnForest,
-  btnRain,
-  btnCoffee,
-  btnFireplace,
-  btnForestClicked,
-  btnRainClicked,
-  btnCoffeeClicked,
-  btnFireplaceClicked
+  controlsBtn,
+
+  activateDarkTheme,
+  deactivateDarkTheme,
+
+  buttonCards,
+  buttonCardsClicked,
+  cardsRange,
 } from './elements.js'
 
 export default function({
-  sound, timer, modes,
+  sound, timer, modes, darkMode
 }){
-  //Events
-  //modesON
-btnForest.addEventListener('click', function(){
+
+//Events
+//modesON
+buttonCards[0].addEventListener('click', function(){
   modes.forestOn()
 })
-btnRain.addEventListener('click', function(){
+buttonCards[1].addEventListener('click', function(){
   modes.rainOn()
 })
-btnCoffee.addEventListener('click', function(){
+buttonCards[2].addEventListener('click', function(){
   modes.coffeeOn()
 })
-btnFireplace.addEventListener('click', function(){
+buttonCards[3].addEventListener('click', function(){
   modes.fireplaceOn()
 })
 //modesOFF
-btnForestClicked.addEventListener('click', function(){
+buttonCardsClicked[0].addEventListener('click', function(){
   modes.forestOff()
 })
-btnRainClicked.addEventListener('click', function(){
+buttonCardsClicked[1].addEventListener('click', function(){
   modes.rainOff()
 })
-btnCoffeeClicked.addEventListener('click', function(){
+buttonCardsClicked[2].addEventListener('click', function(){
   modes.coffeeOff()
 })
-btnFireplaceClicked.addEventListener('click', function(){
+buttonCardsClicked[3].addEventListener('click', function(){
   modes.fireplaceOff()
 })
 
 //controls
-btnPlay.addEventListener('click', function(){
+controlsBtn[0].addEventListener('click', function(){
   timer.validateMinutes()
   sound.buttonPress()
 })
-btnStop.addEventListener('click', function(){
+controlsBtn[1].addEventListener('click', function(){
   timer.resetTimer()
   sound.buttonPress()
 })
-btnTimerUp.addEventListener('click', function(){
+controlsBtn[2].addEventListener('click', function(){
   sound.buttonPress()
   timer.hold()
   timer.minutesUp()
 })
-btnTimerDown.addEventListener('click', function(){
+controlsBtn[3].addEventListener('click', function(){
   sound.buttonPress()
   timer.hold()
   timer.minutesDown()
 })
+
+//cards
+//ranges for sounds
+cardsRange[0].oninput = function(){
+  sound.forestMode.volume = this.value
+}
+cardsRange[1].oninput = function(){
+  sound.rainMode.volume = this.value
+}
+cardsRange[2].oninput = function(){
+  sound.coffeeMode.volume = this.value
+}
+cardsRange[3].oninput = function(){
+  sound.fireplaceMode.volume = this.value
+}
+
+//Dark-Theme
+activateDarkTheme.addEventListener('click', function(){
+  darkMode.darkThemeOn()
+})
+deactivateDarkTheme.addEventListener('click', function(){
+  darkMode.darkThemeOff()
+})
+
+
 }
