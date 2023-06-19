@@ -1,19 +1,15 @@
 <h1 align="center"> FocusTimer-2.0 </h1>
 
 <p align="center">
-Projeto de um timer pomodoro para focar em estudos com funções de controle e sons ambiente.<br>
-Disponível aqui: https://focus-timer-2-0-kappa.vercel.app/
+Pomodoro timer project to focus on studies with control functions and ambient sounds.<br>
+Available here: https://focus-timer-2-0-kappa.vercel.app/
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <a href="#memo-license">License</a>
 </p>
 
 <br>
@@ -25,31 +21,31 @@ Disponível aqui: https://focus-timer-2-0-kappa.vercel.app/
   <img alt="FocusTimer-2.0" src="https://i.imgur.com/bcv8z5m.png" width="50%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - HTML e CSS
 - JavaScript
 - Git e Github
 
-## 💻 Projeto
+## 💻 Project
 
-O FocusTimer 2.0 é um desafio proposto pela Rocket para praticar conhecimentos avançados de Javascript, como:
+FocusTimer 2.0 is a challenge proposed by Rocket to practice advanced knowledge of Javascript, such as:
 
-- Recursividade
-- Factory com Injeção de dependências
+- Recursion
+- Factory with Dependency Injection
 - ES6 Modules
-- Programação declarativa
+- Declarative programming
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/BJLCf71DV13iKCAJ7vORoH/Stage-05---Focus-Timer-2.0-(Copy)?node-id=0-1&t=V7jEmScqhFyTvNOA-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can view the project layout through [THIS LINK](https://www.figma.com/file/BJLCf71DV13iKCAJ7vORoH/Stage-05---Focus-Timer-2.0-(Copy)?node-id=0-1&t=V7jEmScqhFyTvNOA-0). You must have a [Figma](https://figma.com) account to access it.
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT.
+You are free to use this project.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Made with ♥ by Rocketseat :wave: [Join this community.](https://discord.gg/rocketseat)
